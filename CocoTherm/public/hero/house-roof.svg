@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="50%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="roofGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 40 M 0 0 L 40 40" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+
+  <!-- Tropical Sun Glow radiating heat -->
+  <circle cx="1450" cy="280" r="320" fill="url(#sunGrad)" />
+  <circle cx="1450" cy="280" r="140" fill="#fef3c7" fill-opacity="0.25" />
+
+  <!-- Mountain Silhouette in distance -->
+  <path d="M0 650 Q 400 450 850 620 T 1600 500 T 1920 620 L 1920 1080 L 0 1080 Z" fill="#064e3b" fill-opacity="0.3" />
+
+  <!-- Modern House Structure -->
+  <!-- Main Walls -->
+  <rect x="850" y="480" width="850" height="450" fill="url(#wallGrad)" rx="12" />
+  
+  <!-- Architectural Glass Windows (Warm light inside) -->
+  <rect x="920" y="540" width="300" height="340" fill="#fef08a" fill-opacity="0.12" stroke="#334155" stroke-width="3" rx="6" />
+  <line x1="1070" y1="540" x2="1070" y2="880" stroke="#334155" stroke-width="3" />
+  <line x1="920" y1="710" x2="1220" y2="710" stroke="#334155" stroke-width="3" />
+  
+  <rect x="1270" y="540" width="380" height="180" fill="#fef08a" fill-opacity="0.08" stroke="#334155" stroke-width="3" rx="6" />
+  
+  <!-- CocoTherm Insulated Roof with Green Shield -->
+  <polygon points="780,480 1780,480 1680,360 880,360" fill="url(#roofGrad)" />
+  <polygon points="780,480 1780,480 1680,360 880,360" fill="url(#roofGrid)" />
+
+  <!-- Thermal Barrier Cushion Glow (Cool Blue/Green) -->
+  <rect x="840" y="465" width="880" height="30" fill="#34d399" fill-opacity="0.7" rx="6" />
+  <text x="1280" y="485" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#022c22" text-anchor="middle">
+    🛡️ CocoTherm InsulBoard Thermal Heat Barrier (-7°C)
+  </text>
+
+  <!-- Palm Tree Silhouettes (Left & Right) -->
+  <g fill="#022c22" fill-opacity="0.75">
+    <path d="M 280 1080 Q 320 600 420 280 Q 435 285 410 600 Q 340 850 300 1080 Z" />
+    <!-- Fronds -->
+    <path d="M 420 280 Q 250 200 120 280 Q 280 250 420 280 Z" />
+    <path d="M 420 280 Q 320 120 220 100 Q 340 180 420 280 Z" />
+    <path d="M 420 280 Q 450 80 580 90 Q 480 160 420 280 Z" />
+    <path d="M 420 280 Q 580 150 680 220 Q 540 230 420 280 Z" />
+    <path d="M 420 280 Q 560 320 650 400 Q 520 340 420 280 Z" />
+  </g>
+
+  <!-- Ambient Floor Ground -->
+  <rect x="0" y="930" width="1920" height="150" fill="#022c22" fill-opacity="0.9" />
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallInterior" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <pattern id="acousticSlats" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="20" height="40" fill="#78350f" fill-opacity="0.8" />
+      <rect x="20" y="0" width="20" height="40" fill="#1c1917" />
+    </pattern>
+    <linearGradient id="warmLight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#wallInterior)" />
+
+  <!-- Acoustic Slat Wall on the Right Side -->
+  <rect x="950" y="100" width="850" height="850" fill="url(#acousticSlats)" rx="16" stroke="#d97706" stroke-width="2" />
+  
+  <!-- Architectural Downlight casting light across acoustic wall -->
+  <polygon points="1350,80 1850,950 850,950" fill="url(#warmLight)" />
+
+  <!-- Sound Waves Dampening Graphic (NRC 0.85) -->
+  <g transform="translate(1050, 480)">
+    <circle cx="200" cy="100" r="140" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.3" stroke-dasharray="10 8" />
+    <circle cx="200" cy="100" r="100" fill="none" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.5" stroke-dasharray="8 6" />
+    <circle cx="200" cy="100" r="60" fill="none" stroke="#34d399" stroke-width="4" stroke-opacity="0.8" />
+    
+    <text x="200" y="95" font-family="system-ui, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">
+      NRC 0.85
+    </text>
+    <text x="200" y="125" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#34d399" text-anchor="middle">
+      ACOUSTIC ABSORPTION
+    </text>
+  </g>
+
+  <!-- Modern Floor Timber -->
+  <polygon points="0,950 1920,950 1920,1080 0,1080" fill="#292524" />
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="coirGlow" cx="60%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="40%" stop-color="#451a03" />
+      <stop offset="80%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+    <pattern id="fibreMesh" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 Q 40 10 80 20 M 0 60 Q 40 70 80 60 M 20 0 Q 10 40 20 80 M 60 0 Q 70 40 60 80" fill="none" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.25" />
+      <path d="M 10 0 L 70 80 M 70 0 L 10 80" fill="none" stroke="#92400e" stroke-width="1" stroke-opacity="0.2" />
+    </pattern>
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#coirGlow)" />
+  <rect width="1920" height="1080" fill="url(#fibreMesh)" />
+
+  <!-- Coconut Shapes Graphic in Center-Right -->
+  <g transform="translate(1100, 320)">
+    <!-- Coconut Husk Silhouette -->
+    <ellipse cx="280" cy="260" rx="220" ry="260" fill="#451a03" stroke="#b45309" stroke-width="6" />
+    <ellipse cx="280" cy="260" rx="180" ry="220" fill="#78350f" stroke="#d97706" stroke-width="3" stroke-dasharray="8 6" />
+    <ellipse cx="280" cy="260" rx="110" ry="140" fill="#fef3c7" fill-opacity="0.9" />
+    <ellipse cx="280" cy="260" rx="80" ry="100" fill="#38bdf8" fill-opacity="0.15" />
+
+    <!-- Shredded Fibre Strands Emitters -->
+    <path d="M 120 180 Q 20 120 -80 180" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    <path d="M 100 240 Q 0 240 -120 280" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round" />
+    <path d="M 110 320 Q 30 380 -60 420" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    
+    <path d="M 440 180 Q 560 110 680 160" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+    <path d="M 460 260 Q 580 250 720 300" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round" />
+    <path d="M 430 340 Q 540 400 650 430" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Insulation Board Prototype Stack Graphic -->
+  <g transform="translate(850, 680)">
+    <!-- Board 1 -->
+    <polygon points="100,80 650,80 580,220 30,220" fill="url(#boardGrad)" stroke="#f59e0b" stroke-width="2" />
+    <!-- Thickness edge -->
+    <polygon points="30,220 580,220 580,260 30,260" fill="#451a03" stroke="#b45309" stroke-width="2" />
+    <polygon points="580,220 650,80 650,120 580,260" fill="#291202" />
+
+    <text x="320" y="160" font-family="system-ui, sans-serif" font-size="20" font-weight="900" fill="#fef3c7" text-anchor="middle" letter-spacing="2">
+      COCOTHERM 100% ORGANIC COIR BOARD
+    </text>
+  </g>
+</svg>
